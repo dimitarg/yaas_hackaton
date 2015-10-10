@@ -19,6 +19,10 @@ libraryDependencies += "io.spray" %% "spray-json" % "1.3.2"
 
 libraryDependencies += "io.spray" %% "spray-routing" % "1.3.3"
 
+libraryDependencies += "com.typesafe.play" %% "play-json" % "2.3.5"
+
+libraryDependencies += "org.scalatest" %% "scalatest" % "2.2.4" % "test"
+
 mainClass in assembly := Some("com.novarto.yaas.Main")
 
 mergeStrategy in assembly <<= (mergeStrategy in assembly) { (old) =>
